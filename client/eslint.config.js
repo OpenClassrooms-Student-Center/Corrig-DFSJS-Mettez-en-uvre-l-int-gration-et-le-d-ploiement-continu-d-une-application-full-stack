@@ -31,7 +31,10 @@ export default [
       'react-hooks': reactHooks,
     },
     rules: {
-      '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': ['error', {
+        argsIgnorePattern: '^_',
+        varsIgnorePattern: '^_'
+      }],
       '@typescript-eslint/no-explicit-any': 'warn',
       'react/prop-types': 'off',
       'react-hooks/exhaustive-deps': 'warn',
