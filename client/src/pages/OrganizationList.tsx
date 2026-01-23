@@ -10,7 +10,7 @@ export default function OrganizationList() {
     if (window.confirm('Are you sure you want to delete this organization?')) {
       try {
         await deleteOrganization.mutateAsync(id);
-      } catch (_err) {
+      } catch {
         alert('Failed to delete organization');
       }
     }
