@@ -1,4 +1,5 @@
 # Multi-stage Dockerfile for frontend (OPTIMIZED)
+# Updated: 2026-01-23 - Using npm install instead of npm ci
 # Best practices applied:
 # - Multi-stage build (Node build + Nginx serve)
 # - Alpine base images

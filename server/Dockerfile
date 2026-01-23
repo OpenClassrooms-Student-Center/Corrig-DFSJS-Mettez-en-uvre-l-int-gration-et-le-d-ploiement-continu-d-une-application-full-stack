@@ -1,4 +1,5 @@
 # Multi-stage Dockerfile for backend (OPTIMIZED)
+# Updated: 2026-01-23 - Using npm install instead of npm ci
 # Best practices applied:
 # - Multi-stage build to reduce image size
 # - Alpine base image (smaller and more secure)
