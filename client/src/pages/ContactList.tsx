@@ -10,7 +10,7 @@ export default function ContactList() {
     if (window.confirm('Are you sure you want to delete this contact?')) {
       try {
         await deleteContact.mutateAsync(id);
-      } catch (err) {
+      } catch (_e) {
         alert('Failed to delete contact');
       }
     }
