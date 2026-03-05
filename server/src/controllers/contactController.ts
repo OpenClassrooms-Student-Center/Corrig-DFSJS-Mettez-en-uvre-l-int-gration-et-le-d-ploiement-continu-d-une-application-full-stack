@@ -3,7 +3,7 @@ import { contactService } from '../services/contactService';
 import { CreateContactSchema, UpdateContactSchema } from '../models/contactModel';
 
 export const contactController = {
-  async getAll(req: Request, res: Response): Promise<void> {
+  async getAll(_req: Request, res: Response): Promise<void> {
     try {
       const contacts = await contactService.getAllContacts();
       res.json(contacts);
@@ -65,7 +65,7 @@ export const contactController = {
     }
   },
 
-  async getStats(req: Request, res: Response): Promise<void> {
+  async getStats(_req: Request, res: Response): Promise<void> {
     try {
       const stats = await contactService.getContactStats();
       res.json(stats);
